@@ -1,0 +1,128 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: #f8f5f0;
+  color: #1a1a1a;
+  scroll-behavior: smooth;
+}
+
+/* NAV */
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 60px;
+}
+
+/* HERO */
+.hero {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 90vh;
+}
+
+.hero img {
+  width: 200px;
+  border-radius: 50%;
+}
+
+/* BUTTON */
+.btn {
+  padding: 12px 25px;
+  background: black;
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+}
+
+/* TRIANGLES */
+.triangle {
+  position: absolute;
+}
+
+.t1 {
+  border-left: 200px solid transparent;
+  border-right: 200px solid transparent;
+  border-bottom: 200px solid #e8dfca;
+  top: 0;
+}
+
+.t2 {
+  border-left: 150px solid transparent;
+  border-right: 150px solid transparent;
+  border-top: 150px solid #d6c7ae;
+  bottom: 0;
+  right: 0;
+}
+
+/* GLASS */
+.glass {
+  width: 60%;
+  margin: 60px auto;
+}
+
+/* SKILLS */
+.skill {
+  margin-bottom: 20px;
+}
+
+.bar {
+  width: 100%;
+  height: 10px;
+  background: #ddd;
+  border-radius: 10px;
+}
+
+.fill {
+  height: 10px;
+  background: black;
+  border-radius: 10px;
+}
+
+/* PROJECT */
+.project {
+  display: flex;
+  gap: 20px;
+}
+
+/* CERT GRID */
+.cert-grid {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 20px;
+}
+
+.cert-grid img {
+  width: 100%;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+/* POPUP */
+#popup {
+  position: fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background: rgba(0,0,0,0.8);
+  display:none;
+  justify-content:center;
+  align-items:center;
+}
+
+#popup img {
+  width:60%;
+}
+
+/* ANIMATION */
+.fade {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: 1s;
+}
+
+.fade.show {
+  opacity: 1;
+  transform: translateY(0);
+}
